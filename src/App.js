@@ -1,4 +1,4 @@
-import './App.css';
+import Navbar from './components/header';
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <p>
         and save to reload.
       </p>
+      <Navbar />
     </div>
   );
 }
