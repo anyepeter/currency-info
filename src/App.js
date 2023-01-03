@@ -1,12 +1,11 @@
 import Navbar from './components/header';
+import Homepage from './pages/home';
 
 function App() {
   return (
     <div className="App">
-      <p>
-        and save to reload.
-      </p>
       <Navbar />
+      <Homepage />
     </div>
   );
 }
