@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolKit';
-import fetchCurrency from './coinAction';
+import fetchCurrency from '../action/coinAction';
 
 const initialState = {
   currencies: [],
@@ -14,7 +14,6 @@ const currencyReducer = createSlice({
       const items = state;
       items.status = 'success';
       items.currencies = action.payload;
-      console.log(items.currencies);
     });
   },
 });

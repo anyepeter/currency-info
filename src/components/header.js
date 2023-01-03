@@ -1,24 +1,23 @@
 import React from 'react';
 import { BiChevronLeft } from 'react-icons/bi';
 import { FiMic } from 'react-icons/fi';
- import { CiSettings } from 'react-icons/ci';
- import { Link } from 'react-router-dom';
+import { CiSettings } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 import Logo from '../asset/logo.png';
 import '../CSSmodule/navbar.css';
 
-
 const Navbar = () => (
-  <header className='header'>
-    <nav className='nav'>
-       <div>
-        <Link to='home'>
-         <BiChevronLeft />
+  <header className="header">
+    <nav className="nav">
+      <div>
+        <Link to="home">
+          <BiChevronLeft />
         </Link>
       </div>
 
       <div>
-        <img alt='logo' src={Logo}/>
-      </div> 
+        <img alt="logo" src={Logo} />
+      </div>
 
       <ul>
         <li><FiMic /></li>

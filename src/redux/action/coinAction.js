@@ -10,6 +10,4 @@ const fetchCurrency = createAsyncThunk(GET_COINS, async () => {
   return result;
 });
 
-console.log(fetchCurrency);
-
 export default fetchCurrency;
