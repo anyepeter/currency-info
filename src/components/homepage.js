@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 
@@ -9,7 +9,7 @@ const Home = () => {
   const { coins } = useSelector((state) => state.coins);
   const [search, setSearch] = useState('');
 
-const elem = coins.lenght;
+  const elem = coins.lenght;
   return (
     <>
       <div className="searchDiv">
@@ -21,13 +21,15 @@ const elem = coins.lenght;
           placeholder="search"
         />
         <FaSearch className="searchIcon" />
-        <p>Hello{elem}</p>
+        <p>
+          Hello
+          {elem}
+        </p>
       </div>
       <div className="grid">
         {coins.filter((searchCoin) => searchCoin.name.toLowerCase()
           .includes(search.toLowerCase()))
-          .map((coins) => {
-            return(
+          .map((coins) => (
             <div className=" sec1" key={coins.id}>
               <NavLink state={coins} to="/display">
                 <Display
@@ -35,8 +37,8 @@ const elem = coins.lenght;
                 />
               </NavLink>
             </div>
-          )})}
-          
+          ))}
+
       </div>
     </>
   );
