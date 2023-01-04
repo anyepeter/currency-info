@@ -1,30 +1,23 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
-
+import '../CSSmodule/homepage.css';
 import Display from './display';
 
 const Home = () => {
   const { coins } = useSelector((state) => state.coins);
   const [search, setSearch] = useState('');
 
-  const elem = coins.lenght;
   return (
     <>
-      <div className="searchDiv">
+      <div className="container">
         <input
-          className="search"
+          className="input"
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="search"
+          placeholder="search a coin"
         />
-        <FaSearch className="searchIcon" />
-        <p>
-          Hello
-          {elem}
-        </p>
       </div>
       <div className="grid">
         {coins.filter((searchCoin) => searchCoin.name.toLowerCase()
