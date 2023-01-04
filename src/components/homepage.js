@@ -12,7 +12,7 @@ const Home = () => {
   const [search, setSearch] = useState('');
   useEffect(() => {
     dispatch(fetchCoins());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
