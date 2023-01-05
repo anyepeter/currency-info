@@ -1,5 +1,6 @@
 .container {
   --size-button: 40px;
+
   margin-top: 90px;
   position: fixed;
   top: -1.6rem;
@@ -42,19 +43,18 @@
   cursor: pointer;
 }
 
-.image{
-    width: 100%;
-    position: relative;
-    top: -5rem;
-    z-index: -1;
-
+.image {
+  width: 100%;
+  position: relative;
+  top: -5rem;
+  z-index: -1;
 }
 
 .grid {
-    margin-top: 13.9rem;
-    background-color: #0e0e0e;
-    display: grid;
-    grid-gap: 0.4rem;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    padding: 10px;
-  }
+  margin-top: 13.9rem;
+  background-color: #0e0e0e;
+  display: grid;
+  grid-gap: 0.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  padding: 10px;
+}
