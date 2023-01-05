@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home check if it rendering or not 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <input
+      class="input"
+      placeholder="search a coin"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="grid"
+  />
+</div>
+`;
+
+exports[`n check if it rendering or not 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <input
+      class="input"
+      placeholder="search a coin"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="grid"
+  />
+</div>
+`;
+
+exports[`navbar render links check if it rendering or not 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <input
+      class="input"
+      placeholder="search a coin"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="grid"
+  />
+</div>
+`;
