@@ -24,7 +24,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+
 
 # 📖 [Cryptocurrency Info] <a name="about-project"></a>
 
